@@ -1,12 +1,33 @@
 {
   "name": "api-instacode",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DZamora94/api-instacode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DZamora94/api-instacode/issues"
+  },
+  "homepage": "https://github.com/DZamora94/api-instacode#readme",
+  "description": "It is a node + express + mongo + jwt project",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.10",
+    "swagger-ui-express": "^4.3.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
