@@ -51,7 +51,7 @@ app.use('*', (_req, _res, next) => {
 // Error handler
 app.use((error, _req, res, _next) => {
   return res
-    .status(error.status || 500)
+    .status(error.code || 500)
     .json(error.message || 'Unexpected error');
 });
 

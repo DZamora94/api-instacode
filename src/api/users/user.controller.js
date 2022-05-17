@@ -32,6 +32,17 @@ const login = async (req, res, next) => {
   }
 };
 
+const getUserData = async (req, res) => {
+  const { user } = await req;
+  const { password, __v, createdAt, ...restUser } = user.toObject();
+
+  return res.json({
+    status: 200,
+    message: 'User Info',
+    data: restUser
+  });
+};
+
 const getById = async (req, res, next) => {
   try {
     const { id } = req.params;
@@ -51,5 +62,6 @@ const getById = async (req, res, next) => {
 module.exports = {
   create,
   login,
-  getById
+  getById,
+  getUserData
 };
